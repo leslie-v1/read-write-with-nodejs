@@ -1,4 +1,5 @@
 const fs = require('node:fs');
+const path = require("path")
 
 fs.readFile('../files/starter.txt', 'utf8', (err, data) => {
   if (err) {
@@ -7,3 +8,6 @@ fs.readFile('../files/starter.txt', 'utf8', (err, data) => {
   }
   console.log(data);
 });
+
+
+console.log("hello.....")
