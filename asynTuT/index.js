@@ -9,8 +9,15 @@ async function example() {
   try {
     const data = await fs.readFile('../asynTuT/starter.txt', { encoding: 'utf8' });
     console.log(data);
+
+const content = 'Some content!';
+
+fs.writeFile('../asynTuT/new.txt', content, err => {
+});
+
   } catch (err) {
     console.error(err);
   }
+  
 }
 example();
